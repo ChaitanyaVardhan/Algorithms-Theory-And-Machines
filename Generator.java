@@ -1,3 +1,9 @@
+/* This class generates a fixed number N of strings
+of length L from a given alphabet
+Run command: java Generator N L 'abcd' (java Generator 10000 5 'abcdefghijklmnopqrstuvwxyz')
+The above run command would generate 10000 strings of length 5 from the alphabet a-z
+*/
+
 public class Generator {
     public static String randomString(int L, String alpha) {
 	char[] a = new char[L];
