@@ -22,8 +22,21 @@ public class lrs {
 	return lrs;
     }
 
+    public static String lrsSuffixString(String s) {
+	int N = s.length();
+	String[] suffixes = new String[N];
+	for (int i = 0; i < N; i++) 
+	    suffixes[i] = s.substring(i, N);
+
+	for (int i = 0; i < N; i++)
+	    StdOut.println(suffixes[i]);
+
+	return s;
+    }
+
     public static void main(String[] args) {
 	String s = args[0];
 	StdOut.println(lrs(s));
+	lrsSuffixString(s);
     }
 }
