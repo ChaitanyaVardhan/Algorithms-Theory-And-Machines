@@ -5,7 +5,7 @@ public class Merge {
     private static String[] aux;
 
     private static void sort(String[] a, int lo, int hi) {
-	StdOut.println("lo: " + lo + " hi:" + hi);
+	//	StdOut.println("lo: " + lo + " hi:" + hi);
 	int N = hi - lo;
 	if (N <= 1) return;
 	int mid = lo + N/2;
