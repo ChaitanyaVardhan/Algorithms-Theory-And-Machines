@@ -34,8 +34,8 @@ public class lrs {
 
 	Merge.sort(suffixes);
 
-	for (int i = 0; i < N; i++)
-	    StdOut.println(suffixes[i]);
+	//	for (int i = 0; i < N; i++)
+	//	    StdOut.println(suffixes[i]);
 
 	for (int i = 0; i < N - 1; i++) {
 	    String x  = lcp(suffixes[i], suffixes[i+1]);
@@ -46,8 +46,11 @@ public class lrs {
     }
 
     public static void main(String[] args) {
-	String s = args[0];
-	StdOut.println("longest substring thorugh brute force :" + lrs(s));
-	StdOut.println("longest substring through suffix string method : " + lrsSuffixString(s));
+	while(!StdIn.isEmpty()) {
+	    String s = StdIn.readString();
+	    StdOut.println("String :" + s );
+	    StdOut.println("longest substring thorugh brute force :" + lrs(s));
+	    StdOut.println("longest substring through suffix string method : " + lrsSuffixString(s));
+	}
     }
 }
